@@ -9,11 +9,6 @@ const section4 = document.querySelector("#section4");
 const section5 = document.querySelector("#section5");
 const section6 = document.querySelector("#section6");
 
-// fetch("https://opentdb.com/api.php?amount=6")
-//   .then((response) => response.json())
-//   .then((data) => (questions = data))
-//   .catch((error) => console.error(error));
-
 async function search() {
   const cat1 = await axios.get(
     "https://opentdb.com/api.php?amount=6&category=15"
